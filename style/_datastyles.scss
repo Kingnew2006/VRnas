@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'chakra';
+  src: url('./fonts/ChakraPetch-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+// main colors
+$linear: linear-gradient(90deg, rgba(12,186,241,1) 0%, rgba(233,92,233,1) 100%);
+$purple: #CA6AEB;
+$blue: #19B5F1;
+
+//gray scale 
+
+$white: #ffffff;
+$black100: #18181B;
+$black50: #252532;
+$grey2: #D1D1D1;
+$grey1: #B0B0B2;
+
+// mixins
+
+// ✅ Ультра-универсальный миксин
+@mixin gradient-border() {
+  position: relative;
+  border: 1px solid transparent;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: $linear;
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,28 @@
+@use "../../style/reset.scss"   as *;
+@use "../../style/datastyles" as *;
+
+.buttonSwitch {
+  margin-left: 169px;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  background: $linear;
+  justify-content: center;
+  align-items: center;
+   box-shadow:
+    inset -5px -5px 10px #222;
+  font-family: "Damion", cursive;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+}
+
+
+.buttonSwitch:hover {
+  box-shadow: inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;  
+  color: #d6d6d6;
+  transition: 500ms;
+}

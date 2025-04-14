@@ -1,0 +1,15 @@
+{
+  "headerbuttons": {
+    "home": "Home",
+    "aboutus": "About us",
+    "service": "Service",
+    "page": {
+      "page": "Page",
+      "pricingplan": "Pricing plan",
+      "terms": "Terms & Conditions",    
+      "privacy": "Privacy Policy"
+    },
+    "blog": "Blog",
+    "contactus": "Contact us"
+  }
+}

@@ -1,4 +1,4 @@
-import "../../i18n";
+import "../../i18n/index";
 import "../app/app.scss";
 import Layout from "../../components/layout/layout";  
 import { BrowserRouter , Route , Routes } from "react-router-dom";

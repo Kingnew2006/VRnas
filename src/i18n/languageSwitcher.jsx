@@ -1,5 +1,5 @@
 import "./lang.scss";
-import { useTranslation } from "../../node_modules/react-i18next";
+import { useTranslation } from "react-i18next";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation(); // доступ к текущим настройкам языка

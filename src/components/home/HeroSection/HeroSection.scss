@@ -1,0 +1,68 @@
+@use "../../../../style/datastyles" as *;
+
+.hero__main {
+    display: flex;
+    height: 639px;
+}
+
+.hero {
+    width: 540px;
+    height: 486px;
+    margin-top: 87px;
+    margin-left: 120px;
+    
+    
+    
+    &_title {
+        font-size: 64px;
+        color: $white;
+        font-weight: 600;
+        letter-spacing: -0.5%;
+    }
+
+    &_description {
+        margin-top: 12px;
+        font-size: 16px;
+        color: $grey1;
+        line-height: 28px;
+        width: 446px;
+    }
+    &_button {
+        margin-top: 32px;
+    }
+
+    &_photo {
+        margin-left: 128px;
+    }
+}
+
+.features {
+    position: relative;
+    display: flex;
+    margin-top: 99px;
+    width: 277px;
+    height: 50px;
+    gap: 24px;
+    align-items: center;
+     
+    
+    &__images {
+        display: flex;
+        
+
+        & > img {
+            position: relative;
+            margin-right: -12px;
+        
+        }
+
+    
+    }
+}
+.VrPhoto {
+        background-image: url(public/home_assests/main/VrphotoBack.png);
+        background-clip: content-box;
+        width: 196px;
+        height: 128px;
+        margin-left: 52px;
+    }

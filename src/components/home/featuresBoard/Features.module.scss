@@ -1,0 +1,32 @@
+@use "../../../../style/datastyles.scss" as *;
+
+.Features {
+    width: 1200px;
+    height: 357px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: $grey80;
+    
+    
+    &__card { 
+        width: 324px;
+        margin-top: 42px;
+    }
+
+    &__title {
+       font-size: 20px;
+       color: $white;
+       font-weight: 400;
+       margin-top: 42px;
+    }
+
+    &__des {
+        margin-top: 12px;
+        font-size: 14px;
+        color: $grey1;
+        line-height: 28px;
+        font-weight: 200;
+    }
+}

@@ -32,76 +32,29 @@
       "desc": "We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience."
     }
   },
-  "mainService": {
-    "title": "Bring your event to life like never before with our VR services.",
-    "desc": "Whether it's a corporate event, expo, or a personal gathering, our immersive VR experiences make it unforgettable.",
-    "button": "Learn More"
-  },
-  "ourService": {
-    "sectionTitle": "Our Service",
-    "service1": {
-      "title": "VR Setup",
-      "desc": "Complete setup and configuration services tailored to your space."
-    },
-    "service2": {
-      "title": "VR Rental",
-      "desc": "Affordable and flexible rental options for your events."
-    },
-    "service3": {
-      "title": "VR Content",
-      "desc": "Custom-made VR content to engage and entertain your audience."
-    }
-  },
-  "whyChooseUs": {
-    "title": "Why Choose Us for Your VR Needs",
-    "desc": "Professional and Experienced Team. We focus on delivering high-quality VR solutions that drive engagement and results.",
-    "list": [
-      "Latest VR Hardware",
-      "Exceptional Customer Service"
-    ]
-  },
-  "videoSection": {
-    "title": "Bringing Your Virtual Reality Dreams to Life",
-    "videoTitle": "How to get started"
-  },
-  "testimonials": {
-    "title": "What Our Clients Are Saying"
-  },
-  "pricing": {
-    "title": "Affordable VR Services for Everyone",
-    "package1": {
-      "title": "Basic VR Setup",
-      "desc": "Ideal for small gatherings and events."
-    },
-    "package2": {
-      "title": "Full VR Experience",
-      "desc": "Perfect for exhibitions and corporate experiences."
-    },
-    "package3": {
-      "title": "Custom VR Content",
-      "desc": "Tailor-made VR content production for your brand."
-    },
-    "priceTag": "$99",
-    "button": "Get Started"
-  },
-  "partners": {
-    "title": "Discover the Companies We Work With"
-  },
-  "insights": {
-    "title": "Stay Up-to-Date with Our VR Insights",
-    "button": "Read More",
-    "popular": "Popular Article",
-    "recent": "Recent Article"
-  },
-  "newsletter": {
-    "title": "Subscribe to our newsletter for latest updates",
-    "inputPlaceholder": "Enter your email",
-    "button": "Subscribe"
-  },
   "footer": {
-    "company": "Company",
+    "quicklinks": "Quicklinks",
+    "home": "Home",
+    "pricing": "Pricing Plan",
+    "service": "Service",
+    "blog": "Blog",
+    "team": "Our Team",
+
     "support": "Support",
-    "resources": "Resources",
-    "getInTouch": "Get In Touch"
+    "about": "About us",
+    "contact": "Contact us",
+    "faq": "FAQ",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+
+    "help": "Need Help?",
+    "address": "Tanjung Sari Street no.48, Pontianak City",
+    "email": "Support@VRNas.com",
+    "phone": "+123 456 7890",
+
+    "copyright": "© Copyright 2023, All Rights Reserved",
+
+    "emailtitle": "Subscribe to our newsletter for latest updates",
+    "emailplaceholder": "Enter your email address"
   }
 }

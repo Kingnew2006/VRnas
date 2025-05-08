@@ -1,0 +1,86 @@
+@use '../../../style/datastyles' as *;
+
+
+.footer {
+    width: 1201px;
+    height: 343px;
+    display: flex;
+    margin: 115px 0 0 121px;
+    font-family: chakra;
+
+  &__container {
+    width: 1440px;
+
+    margin: 0 auto;
+  }
+
+  &__logo {
+
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 139px;
+    gap: 20px;
+  }
+
+  &__linksSection {
+    display: flex;
+    
+    margin-left: 177px;
+  }
+
+  &__links {
+    color: #fff;
+    line-height: 28px;
+
+    &1 {
+      margin-left: 177px;
+    }
+
+    &2 {
+      margin-left: 149px;
+    }
+
+    &3 {
+      margin-left: 89px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 300;
+    gap: 16px;
+    opacity: 0.5;
+  }
+
+  &__line {
+    width: 1200px;
+    height: 1px;
+    background: $linear;
+    margin: 33px 0 0 122px;
+  }
+
+  &__bottomContainer {
+    display: flex;
+    justify-content: center;
+    font-family: chakra;
+  }
+
+  &__copyright {
+    margin-top: 32px;
+    color: $white;
+    font-size: 16px;  
+    font-weight: 300;
+    line-height: 28px;
+    opacity: 0.5;
+  }
+}

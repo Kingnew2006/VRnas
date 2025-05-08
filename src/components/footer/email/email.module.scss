@@ -1,0 +1,73 @@
+@use '../../../../style/_datastyles.scss' as *;
+
+.email {
+    width: 1200px;
+    height: 185px;
+    background: $linear;
+    margin: 0 120px 65px 120px;
+    box-sizing: border-box;
+    font-family: chakra;
+    display: flex;
+    align-items: center;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    
+    &__title {
+        font-family: chakra;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 58px;
+        width: 520px; 
+        color: $white;
+        margin-left: 74px;
+    }
+
+    &__inputContainer {
+        margin-left: 167px;
+        
+    }
+    
+    &__inputIcon {
+        margin-left: 14px;
+    }
+    
+    &__inputText {
+        margin-left: 8px;
+        color: $white;
+        
+        &::placeholder {
+            color: $white;
+        }
+    }
+    
+    &__inputButton {
+        margin-left: 18px;
+        background: rgba(255, 255, 255, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    
+    &__input {
+        background: rgba(255, 255, 255, 0.07);
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        width: 300px;
+        border-radius: 10px;
+    }
+    
+}
+
+input {
+    all: unset;
+}

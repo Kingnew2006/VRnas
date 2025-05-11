@@ -32,16 +32,25 @@
       "desc": "Мы стремимся предоставлять исключительный клиентский сервис — от начальной консультации до финальной реализации. Наша цель — убедиться, что вы довольны каждым аспектом вашего VR-опыта."
     }
   },
-  "aboutUs": {
-    "headline": "Bring your events to life like never before with our VR services.",
-    "description": "VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light.",
-    "features": {
-      "tech": "Cutting-Edge Technology",
-      "applications": "Versatile Applications",
-      "affordable": "Affordable and Accessible"
-    },
-    "readMore": "Read More"
+  "footer": {
+    "quicklinks": "Быстрые ссылки",
+    "home": "Главная",
+    "pricing": "Тарифы",
+    "service": "Услуги",
+    "blog": "Блог",
+    "team": "Наша команда",
+    "support": "Поддержка",
+    "about": "О нас",
+    "contact": "Контакты",
+    "faq": "FAQ",
+    "terms": "Условия использования",
+    "privacy": "Политика конфиденциальности",
+    "help": "Нужна помощь?",
+    "address": "Улица Танжун Сари, 48, город Панджакан",
+    "email": "support@vrnas.com",
+    "phone": "+123 456 7890",
+    "copyright": "© Copyright 2023, Все права защищены",
+    "emailtitle": "Подпишитесь на нашу рассылку для последних обновлений",
+    "emailplaceholder": "Введите ваш адрес электронной почты"
   }
-  
-
 }

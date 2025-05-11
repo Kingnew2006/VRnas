@@ -32,18 +32,29 @@
       "desc": "We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience."
     }
   },
-  "aboutUs": {
-    "aboutUs": "О нас",
-    "headline": "Оживите ваши события как никогда раньше с нашими VR-сервисами.",
-    "description": "VRNas — ведущий поставщик VR-услуг для образования, развлечений, архитектуры и мероприятий. Наша миссия — донести силу виртуальной реальности до каждого, позволяя людям исследовать новые миры, учиться по-новому и переживать события в новом свете.",
-    "features": {
-      "tech": "Передовые технологии",
-      "applications": "Универсальные применения",
-      "affordable": "Доступность и удобство"
-    },
-    "readMore": "Узнать больше"
-  }
-  
+  "footer": {
+    "quicklinks": "Quicklinks",
+    "home": "Home",
+    "pricing": "Pricing Plan",
+    "service": "Service",
+    "blog": "Blog",
+    "team": "Our Team",
 
- 
+    "support": "Support",
+    "about": "About us",
+    "contact": "Contact us",
+    "faq": "FAQ",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+
+    "help": "Need Help?",
+    "address": "Tanjung Sari Street no.48, Pontianak City",
+    "email": "Support@VRNas.com",
+    "phone": "+123 456 7890",
+
+    "copyright": "© Copyright 2023, All Rights Reserved",
+
+    "emailtitle": "Subscribe to our newsletter for latest updates",
+    "emailplaceholder": "Enter your email address"
+  }
 }

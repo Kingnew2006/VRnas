@@ -1,5 +1,5 @@
 import Header from "../../components/header/header.jsx";
-// import Footer from '../../components/footer/footer.jsx';
+import Footer from '../../components/footer/footer.jsx';
 // import { Route , Routes , RouterProvider } from 'react-router-dom'
 // import background__drop from "../../assets/background/background__drop.png";
 import styled from "styled-components";
@@ -27,6 +27,7 @@ function Layout({ children }) {
 
       <Header />
       <main>{children}</main>
+      <Footer />
     </LayoutContainer>
   );
 }

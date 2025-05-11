@@ -35,9 +35,6 @@ $grey80: #252532;
     inset: 0;
     padding: 1px;
     background: $linear;
-    -webkit-mask:
-      linear-gradient(#fff 0 0) content-box,
-      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     z-index: -1;

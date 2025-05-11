@@ -1,0 +1,57 @@
+@use "../../../../style/datastyles" as *;
+
+.aboutUs {
+    display: flex; 
+    position: relative;
+    width: 1238px;
+    height: 645px;  
+    margin-top: 120px;
+    margin-left: 66px;
+
+
+    &__ImgSection {
+        width: 608px;
+        height: 622px;
+        position: relative;
+                 
+        & > img {
+            position: absolute;
+        }
+
+        &__img1 {
+            margin: 125px 0 0 54px;
+        }
+        &__img2 {
+            filter: blur(105px);
+        }
+        &__img3 {
+            margin-left: 76px;
+        }
+        &__img4 {
+            z-index: 99;
+            width: 130px;
+            height: 88px;
+            object-fit: contain;
+            &__main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background-color: $grey80;
+                width: 196px ;
+                height: 127px;
+                margin: 517px 0 0 386px; 
+
+            }   
+        }
+
+            
+
+    }
+
+    &__DesSection {
+        width: 562px;
+        height: 549px;
+    }
+}
+    

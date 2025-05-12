@@ -9,7 +9,7 @@ const StyledImg = styled.div`
   right: 0;
   top: 0;
   z-index: -1;
-  background-image: url(./public/background/background__drop.png);
+  background-image: url(/background/background__drop.png);
   background-size: cover;
   background-position: center;
   width: 736px;

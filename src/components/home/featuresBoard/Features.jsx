@@ -3,9 +3,9 @@ import { useTranslation } from "react-i18next";
  
 
 let features = [
-    {img: 'public/home_assests/featuresBoard/Expetise.svg', title: 'features.Expertise.title', description: 'features.Expertise.desc'},
-    {img: 'public/home_assests/featuresBoard/Custom.svg', title: 'features.Customization.title', description: 'features.Customization.desc'},
-    {img: 'public/home_assests/featuresBoard/Service.svg', title: 'features.getInTouch.title', description: 'features.getInTouch.desc'}
+    {img: '/home_assests/featuresBoard/Expetise.svg', title: 'features.Expertise.title', description: 'features.Expertise.desc'},
+    {img: '/home_assests/featuresBoard/Custom.svg', title: 'features.Customization.title', description: 'features.Customization.desc'},
+    {img: '/home_assests/featuresBoard/Service.svg', title: 'features.getInTouch.title', description: 'features.getInTouch.desc'}
 ]
 
 export default function Features() {

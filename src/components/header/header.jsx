@@ -16,7 +16,7 @@ function Header() {
     <div className="header__container">
       <div className="header">
         <div className="header__logo">
-          <img src="public/logos/logo.svg" alt="" />
+          <img src="/logos/logo.svg" alt="" />
         </div>
 
         <div className="header__links">

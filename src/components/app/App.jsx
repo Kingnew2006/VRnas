@@ -2,7 +2,7 @@ import "../../i18n/index";
 import "../app/app.scss";
 import Layout from "../../components/layout/layout";  
 import { BrowserRouter , Route , Routes } from "react-router-dom";
-import Home from "../../components/home/home";
+import Home from "../../components/home/home";    
 import Aboutus from "../../components/aboutus/aboutus";
 import Service from "../../components/service/service";
 import Page404 from "../../components/page404/page404";

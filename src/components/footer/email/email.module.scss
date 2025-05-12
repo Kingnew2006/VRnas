@@ -4,7 +4,7 @@
     width: 1200px;
     height: 185px;
     background: $linear;
-    margin: 0 120px 65px 120px;
+    margin: 60px 120px 65px 120px;
     box-sizing: border-box;
     font-family: chakra;
     display: flex;
@@ -46,7 +46,7 @@
     }
     
     &__inputButton {
-        margin-left: 18px;
+        margin-left: 60px;
         background: rgba(255, 255, 255, 0.5);
         display: flex;
         align-items: center;

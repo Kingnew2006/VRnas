@@ -19,26 +19,26 @@ function HeroSection() {
           </div>
           <div className="features">
             <div className="features__images">
-              <img src="public/home_assests/main/client1.png" alt="Client 1" />
-              <img src="public/home_assests/main/client2.png" alt="Client 2" />
-              <img src="public/home_assests/main/client3.png" alt="Client 3" />
+              <img src="/home_assests/main/client1.png" alt="Client 1" />
+              <img src="/home_assests/main/client2.png" alt="Client 2" />
+              <img src="/home_assests/main/client3.png" alt="Client 3" />
             </div>
             <img
               className="happyClient"
               alt="Happy Client"
               width="132px"
-              src="public/home_assests/main/happyClient.svg"
+              src="/home_assests/main/happyClient.svg"
             />
             <div className="VrPhoto">
               <img
-                src="public/home_assests/main/kaka_clipdrop-relight.png"
+                src="/home_assests/main/kaka_clipdrop-relight.png"
                 alt=""
               />
             </div>
           </div>
         </div>
         <img
-          src="public/home_assests/main/Image.png"
+          src="/home_assests/main/Image.png"
           alt="Hero"
           className="hero_photo"
         />

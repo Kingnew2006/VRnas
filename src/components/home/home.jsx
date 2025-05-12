@@ -13,7 +13,6 @@ const background__lines = styled.div`
 `;
 
 function Home() {
-  // const { t } = useTranslation();
 
   return (
     <>

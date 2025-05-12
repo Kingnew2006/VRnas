@@ -15,8 +15,8 @@ const ButtonCom = styled.button`
   letter-spacing: 0.09375rem;
 `;
 
-function Button({ Width, Value }) {
-  return <ButtonCom $width={Width}>{Value}</ButtonCom>;
+function Button({ Width, Value , className }) {
+  return <ButtonCom $width={Width} className={className}>{Value}</ButtonCom>;
 }
 
 export default Button;

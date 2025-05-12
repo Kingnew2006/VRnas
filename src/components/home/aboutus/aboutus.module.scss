@@ -52,6 +52,54 @@
     &__DesSection {
         width: 562px;
         height: 549px;
+        margin: 81px 0 0 80px;
+ 
+        &__header {
+            background: $linear;
+            background-clip: text;
+            color: transparent;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &__text {
+            color: $white;
+            padding-top: 12px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 58px;
+        }
+        &__des {
+            color: $grey2;
+            padding-top: 12px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 29px;
+        }
+
+        &__features {
+
+            &__fact {
+                display: flex;
+                align-items: center;
+                margin-bottom: 14px;
+                gap: 12px;
+
+                
+                
+                &__text {
+                    margin-bottom: 14px;
+                    color: $grey1;
+                    
+                }
+            }
+                
+        }
+
+        &__button {
+            margin-top: 32px;
+        }
+
     }
 }
-    

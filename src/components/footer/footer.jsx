@@ -29,11 +29,11 @@ const Footer = () => {
     };
 
     const images = {
-        mainlogo: "/public/logos/logo.svg",
-        logo1: "/public/footer/1.svg",
-        logo2: "/public/footer/2.svg",
-        logo3: "/public/footer/3.svg",
-        logo4: "/public/footer/4.svg"
+        mainlogo: "/logos/logo.svg",
+        logo1: "/footer/1.svg",
+        logo2: "/footer/2.svg",
+        logo3: "/footer/3.svg",
+        logo4: "/footer/4.svg"
     }
 
     return (

@@ -67,5 +67,57 @@
       "affordable": "Affordable and Accessible"
     },
     "readMore": "READ MORE"
-  } 
+  },
+  "ourService": {
+    "title": "Our Service",
+    "description": "We use the latest VR hardware and software to create high-quality VR experiences that are accessible and affordable. Our goal is to provide exceptional customer service and support, and our team is always available to answer any questions and address any concerns you may have."
+    },
+    "services": {
+      "vrDevelopment": {
+        "title": "VR Development",
+        "description": "From concept to creation, our team of VR developers will bring your vision to life."
+      },
+      "vrDesign": {
+        "title": "VR Design",
+        "description": "Our talented VR designers will create immersive and engaging environments that will captivate your audience."
+      },
+      "vrConsulting": {
+        "title": "VR Consulting",
+        "description": "Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations."
+      },
+      "vrGames": {
+        "title": "VR Games",
+        "description": "We offer a wide selection of VR games that are suitable for players of all ages and skill levels."
+      },
+      "vrEvents": {
+        "title": "VR Events",
+        "description": "Make your next event unforgettable with our VR event services.",
+        "learnMore": "Learn More"
+      },
+      "vrEntertainment": {
+        "title": "VR Entertainment",
+        "description": "Create a VR escape room, or offer VR experiences at a theme park — we have the expertise and experience to make it happen."
+      }
+    },
+  "whyChooseUs": {
+    "text": "Why Choose Us",
+    "title": "Why Choose Us for Your VR Needs",
+    "questions": {
+      "q1": {
+        "title": "Passionate and Experienced Team",
+        "desc": "We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences."
+      },
+      "q2": {
+        "title": "Customized Solutions",
+        "desc": "We understand that each client is unique, which is why we tailor our VR solutions to fit your specific goals, industry, and audience — ensuring maximum impact and effectiveness."
+      },
+      "q3": {
+        "title": "Exceptional Customer Service",
+        "desc": "Our support team is always available to guide you through every step of the process, from planning to implementation, ensuring a seamless and satisfying experience."
+      }
+    }
+  }
 }
+
+  
+

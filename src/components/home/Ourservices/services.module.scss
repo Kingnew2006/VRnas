@@ -1,0 +1,70 @@
+@use "../../../../style/datastyles" as *;
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(1, 379px);
+    grid-template-rows: repeat(2, 291px);
+    grid-auto-flow: column;
+    gap: 30px;
+    margin: 0 auto;
+    
+}
+
+.services > :nth-child(3) {
+    margin-top: 57px;
+}
+.services > :nth-child(4) {
+    margin-top: 57px;
+}
+.services > :nth-child(5) {
+    margin-top: 135px;
+}
+.services > :nth-child(6) {
+    margin-top: 135px;
+}
+ 
+
+.container {
+    padding: 150px 120px;
+     font-family: "Chakra";
+}
+
+.header {
+    display: flex;
+   
+    align-items: center;
+    padding-bottom: 46px;
+}
+
+.title {
+    color: $white;
+    width: 260px;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.24px;
+}
+.subtitle {
+
+    width: 128px;
+    color: transparent;
+    background: $linear;
+    background-clip: text;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.24px;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-left: 274px;
+    width: 625px;
+    color: $grey2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;  
+}

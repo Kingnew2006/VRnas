@@ -1,0 +1,79 @@
+@use '../../../../style/datastyles' as *;
+
+.mainContainer {
+    width: 1300px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-family: "chakra";
+    margin: 149px 120px ;
+    position: relative;
+     
+}
+.text {
+    color: transparent;
+    background: $linear;
+    background-clip: text;
+    width: 160px;
+    font-family: "Chakra Petch";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.24px;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 48px;
+    width: 548px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: $white;
+}
+
+.imgContainer {
+    width: 548px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 172px;
+}
+
+.imgWrapper > img {
+     
+    position: absolute;
+}
+.img1  {
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.img2 {
+    top: 165px;
+    left: 60px;
+    z-index: 98;
+}
+.img3 {
+    top: 571px;
+    left: 282px;
+    z-index: 100;
+}
+.img4 {
+    width: 364.621px;
+    height: 608.059px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 96;
+    background: $linear;
+    transform: rotate(-90deg);
+    filter: blur(105px);
+}

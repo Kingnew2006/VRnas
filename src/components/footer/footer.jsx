@@ -41,7 +41,8 @@ const Footer = () => {
             <Email />
             <footer className={styles.footer}>
                 <div className={styles.footer__logoSection}>
-                    <img src={images.mainlogo} alt="logo" className={styles.footer__logo} />
+                    <div className={styles.backGradient}></div>
+                        <img src={images.mainlogo} alt="logo" className={styles.footer__logo_main} />
                 <div className={styles.footer__social}>
                     <img src={images.logo1} alt="logo" className={styles.footer__logo} />
                     <img src={images.logo2} alt="logo" className={styles.footer__logo} />

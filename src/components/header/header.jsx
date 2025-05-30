@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import styled from "styled-components";
+import ThemeToggleButton from "../../../style/theme";
+import Button from "../MiniComponents/Button";
 
 function Header() {
   const { t } = useTranslation();
@@ -16,21 +18,28 @@ function Header() {
     <div className="header__container">
       <div className="header">
         <div className="header__logo">
-          <img src="/logos/logo.svg" alt="" />
+          <div className="backGradient"></div>
+          <Link to="/">
+            <img src="/logos/logo.svg" alt="Logo" />
+          </Link>
         </div>
 
         <div className="header__links">
           <Links />
         </div>
-
-        <div className="header__lang">
-          <LanguageSwitcher />
+        <div className="header__state__container">
+          <div className="back"></div>
+          <div className="header__theme">
+            <ThemeToggleButton />
+          </div>
+          <div className="header__lang">
+            <LanguageSwitcher />
+          </div>
         </div>
 
         <Link to="/contactus">
-          <button className="header__contactus">
-            {t("headerbuttons.contactus")}
-          </button>
+          <Button Width={126} Value={t("headerbuttons.contactus")} className="header__contactus">
+          </Button>
         </Link>
       </div>
       <div className="header__pagebutton">
@@ -71,13 +80,13 @@ function Links() {
   );
 }
 
-  const PagePortal = styled.div`
-        position: absolute;
-        margin-top: 70px;
-        margin-left: 820px;
-        visibility: ${(props) => (props.active ? "visible" : "hidden")};
-        z-index: 100;
-  `;
+const PagePortal = styled.div`
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 820px;
+  visibility: ${(props) => (props.active ? "visible" : "hidden")};
+  z-index: 100;
+`;
 
 function PageButton() {
   // const { t } = useTranslation();
@@ -89,16 +98,14 @@ function PageButton() {
     { to: "/page/Privacy", label: "Privacy Policy" },
   ];
 
-
-
   return ReactDOM.createPortal(
     <PagePortal active={active}>
       <div className="pagebutton__main">
-      {pageLinks.map((link, index) => (
-        <Link key={index} to={link.to} onClick={() => setActive(false)}>
-          <div className="pagebutton__main--option">{link.label}</div>
-        </Link>
-      ))}
+        {pageLinks.map((link, index) => (
+          <Link key={index} to={link.to} onClick={() => setActive(false)}>
+            <div className="pagebutton__main--option">{link.label}</div>
+          </Link>
+        ))}
       </div>
     </PagePortal>,
     document.getElementById("modal-root")

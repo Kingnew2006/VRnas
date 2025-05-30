@@ -1,20 +1,28 @@
 @use '../../../style/datastyles' as *;
 
-
 .footer {
-    width: 1201px;
-    height: 343px;
-    display: flex;
-    margin: 115px 0 0 121px;
-    font-family: chakra;
+  width: 1201px;
+  height: 343px;
+  display: flex;
+  margin: 115px 0 0 121px;
+  font-family: chakra;
+
+  .backGradient {
+    background: var(--gradient);
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    z-index: -99;
+    filter: blur(25px);
+
+  }
+
+
 
   &__container {
     width: 1440px;
-
     margin: 0 auto;
   }
-
- 
 
   &__social {
     display: flex;
@@ -24,12 +32,11 @@
 
   &__linksSection {
     display: flex;
-    
     margin-left: 177px;
   }
 
   &__links {
-    color: #fff;
+    color: var(--text-color); // ← смысловая переменная
     line-height: 28px;
 
     &1 {
@@ -63,7 +70,7 @@
   &__line {
     width: 1200px;
     height: 1px;
-    background: $linear;
+    background: var(--gradient); // ← логичное название для градиента/акцента
     margin: 33px 0 0 122px;
   }
 
@@ -75,8 +82,8 @@
 
   &__copyright {
     margin-top: 32px;
-    color: $white;
-    font-size: 16px;  
+    color: var(--text-color);
+    font-size: 16px;
     font-weight: 300;
     line-height: 28px;
     opacity: 0.5;

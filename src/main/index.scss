@@ -1,3 +1,5 @@
+@use "../../style/datastyles.scss" as *;
+
 body {
-    background-color: #18181B;;
+    background-color: var(--bg-color);
 }

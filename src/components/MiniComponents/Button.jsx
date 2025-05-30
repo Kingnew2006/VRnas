@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ButtonCom = styled.button`
   width: ${({ $width }) => $width || '150px'}; /* Дефолтное значение */
   height: 50px;
-  background: linear-gradient(90deg, rgba(12,186,241,1) 0%, rgba(233,92,233,1) 100%);
+  background: var(--gradient);
   display: flex;
   align-items: center;
   justify-content: center;

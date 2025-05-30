@@ -1,105 +1,98 @@
 @use "../../../../style/datastyles" as *;
 
 .aboutUs {
-    display: flex; 
+  display: flex;
+  position: relative;
+  width: 1238px;
+  height: 645px;
+  margin: 120px 0 0 66px;
+
+  &__ImgSection {
     position: relative;
-    width: 1238px;
-    height: 645px;  
-    margin-top: 120px;
-    margin-left: 66px;
+    width: 608px;
+    height: 622px;
 
-
-    &__ImgSection {
-        width: 608px;
-        height: 622px;
-        position: relative;
-                 
-        & > img {
-            position: absolute;
-        }
-
-        &__img1 {
-            margin: 125px 0 0 54px;
-        }
-        &__img2 {
-            filter: blur(105px);
-        }
-        &__img3 {
-            margin-left: 76px;
-        }
-        &__img4 {
-            z-index: 99;
-            width: 130px;
-            height: 88px;
-            object-fit: contain;
-            &__main{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                background-color: $grey80;
-                width: 196px ;
-                height: 127px;
-                margin: 517px 0 0 386px; 
-
-            }   
-        }
-
-            
-
+    & > img {
+      position: absolute;
     }
 
-    &__DesSection {
-        width: 562px;
-        height: 549px;
-        margin: 81px 0 0 80px;
- 
-        &__header {
-            background: $linear;
-            background-clip: text;
-            color: transparent;
-            font-size: 16px;
-            font-weight: 500;
-        }
+    &__img1 {
+      margin: 125px 0 0 54px;
+    }
+
+    &__img2 {
+      filter: blur(105px);
+    }
+
+    &__img3 {
+      margin-left: 76px;
+    }
+
+    &__img4 {
+      z-index: 99;
+      width: 130px;
+      height: 88px;
+      object-fit: contain;
+
+      &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: var(--grey80); /* вместо var(--var-grey80) */
+        width: 196px;
+        height: 127px;
+        margin: 517px 0 0 386px;
+      }
+    }
+  }
+
+  &__DesSection {
+    width: 562px;
+    height: 549px;
+    margin: 81px 0 0 80px;
+
+    &__header {
+      font-size: 16px;
+      font-weight: 500;
+      background: var(--gradient); /* вместо var(--var-accent) */
+      background-clip: text;
+      -webkit-background-clip: text; /* для кроссбраузерности */
+      color: transparent;
+    }
+
+    &__text {
+      color: var(--text-color); /* вместо var(--var-text-primary) */
+      padding-top: 12px;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+    }
+
+    &__des {
+      color: var(--grey1); /* вместо var(--var-text-secondary) */
+      padding-top: 12px;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 28px;
+      margin-bottom: 29px;
+    }
+
+    &__features {
+      &__fact {
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+        gap: 12px;
 
         &__text {
-            color: $white;
-            padding-top: 12px;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 58px;
+          color: var(--grey1); /* вместо var(--var-grey1) */
         }
-        &__des {
-            color: $grey2;
-            padding-top: 12px;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 28px;
-            margin-bottom: 29px;
-        }
-
-        &__features {
-
-            &__fact {
-                display: flex;
-                align-items: center;
-                margin-bottom: 14px;
-                gap: 12px;
-
-                
-                
-                &__text {
-                    margin-bottom: 14px;
-                    color: $grey1;
-                    
-                }
-            }
-                
-        }
-
-        &__button {
-            margin-top: 32px;
-        }
-
+      }
     }
+
+    &__button {
+      margin-top: 32px;
+    }
+  }
 }

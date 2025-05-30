@@ -1,88 +1,117 @@
-@use '../../../style/datastyles.scss' as *;
-@use '../../../style/reset.scss' as *;
+@use "../../../style/datastyles" as *;
 
-// Header Component Styles
 .header {
+  display: flex;
+  width: 1440px;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+
+
+  &__container {
     display: flex;
-    width: 1440px;
-    height: 52px;
     justify-content: center;
-
     align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 114px;
+  }
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  &__state__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 165px;
+    position: relative;
+    transform: scale(1.1);
+  }
+
+  .back {
+    background: var(--gradient);
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+    filter: blur(25px);
+  }
+
+  .backGradient {
+    background: var(--gradient);
+    width: 110px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+    filter: blur(25px);
+  }
+
+
+  &__links {
+    > ul {
+      display: flex;
+      gap: 64px;
+      list-style: none;
+      color: var(--text-color);
+
+      > li {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 200;
         position: relative;
-        height: 114px;
-    }
-
-    // Links Section
-    &__links {
-        > ul {
-            display: flex;
-            gap: 64px;
-            list-style: none;
-            color: $white;
-
-            > li {
-                font-size: 16px;
-                line-height: 28px;
-                font-weight: 200;
-                position: relative;
-                cursor: pointer;
-
-
-            
-                
-            }
-                &:nth-child(1) {
-                    margin-left: 264px;
-            }
-
-          
-        }
-    }
-
-    // Contact Us Button
-    &__contactus {
-        @include gradient-border();
-        width: 126px;
-        height: 52px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $white;
-        margin-left: 5px;
-        
-    }
-}
-
-// Active Link Style
-.link--active {
-    color: $white;
-    font-weight: 700;
-    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
-}
-
-
-// Page Button Styles
-.pagebutton__main--option {
-    color: $white;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 200;
-    
-    &:hover {
-        visibility: visible;
-        opacity: 1;
-        z-index: 1;
         cursor: pointer;
-        filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+        &:hover {
+          visibility: visible;
+          opacity: 1;
+          z-index: 1;
+          filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+        }
+      }
+
+
+      &:nth-child(1) {
+        margin-left: 264px;
+      }
     }
-    
+  }
+
+  &__contactus {
+    width: 126px;
+    color: var(--text-color);
+    margin-left: 15px;
+
+    &:hover {
+      visibility: visible;
+      opacity: 1;
+      z-index: 1;
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+    }
+
+    &:active {
+      color: var(--text-color);
+      font-weight: 700;
+      filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.6));
+    }
+
+  }
 }
 
+.link--active {
+  color: var(--text-color);
+  font-weight: 700;
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
 
+.pagebutton__main--option {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 200;
+
+  &:hover {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+  }
+}

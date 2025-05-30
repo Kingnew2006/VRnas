@@ -1,3 +1,5 @@
+@use "./datastyles" as *;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,7 +29,7 @@ body {
 	line-height: 1;
 	max-width: 1440px;
 	margin: 0 auto;
-  	font-family: 'Chakra Petch', sans-serif;
+  	font-family: "Chakra";
 
 }
 

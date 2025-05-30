@@ -1,31 +1,29 @@
 @use '../../../../style/_datastyles.scss' as *;
 
 .serviceBlock {
-    width: 379px;
-    height: 291px;
-    background: rgba(37, 37, 50, 0.60);
-    font-family: "chakra";
-    
-    &__image {
-        margin: 38px 0 0 32px;
-       
-    }
-    
-    &__title {
-        margin: 60px 0 0 32px;
-        color: $white;
-        font-size: 20px;
-        font-weight: 400;
+  width: 379px;
+  height: 291px;
+  background: var(--grey80);
+  font-family: "chakra";
+  padding-left: 32px;
 
-    }
-    
-    &__description {
-        margin: 12px 0 0 32px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 28px;
-        color: $grey1;
-    }
-    
-    
-} 
+  &__image {
+    margin-top: 38px;
+    margin-left: 0;
+  }
+
+  &__title {
+    margin: 60px 0 0 0;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500; // чуть жирнее для контраста
+  }
+
+  &__description {
+    margin: 12px 0 0 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--grey2);
+  }
+}

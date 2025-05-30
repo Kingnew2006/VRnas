@@ -5,25 +5,48 @@
   font-style: normal;
 }
 
+/* Дефолтные переменные — обычно светлая тема */
+/* === Дефолтная тема (Dark) === */
+:root {
+  /* Семантические переменные */
+  --bg-color: var(--black100);
+  --text-color: var(--white);
+  --secondary-color: var(--grey1);
+  --card-bg: var(--black50);
+  --accent-color: var(--blue);
+
+  /* Цветовые переменные (базовые) */
+  --white: #ffffff;
+  --black100: #18181B;
+  --black50: #252532;
+  --grey1: #B0B0B2;
+  --grey2: #D1D1D1;
+  --grey80: #252532;
+  --blue: #19B5F1;
+  --purple: #CA6AEB;
+  --gradient: linear-gradient(90deg, rgba(12,186,241,1) 0%, rgba(233,92,233,1) 100%);
+
+  --service-bg: rgba(37, 37, 50, 0.6);
+}
 
 
-// main colors
-$linear: linear-gradient(90deg, rgba(12,186,241,1) 0%, rgba(233,92,233,1) 100%);
-$purple: #CA6AEB;
-$blue: #19B5F1;
+[data-theme='light'] {
+  /* Переопределяем только смысловые переменные */
+  --bg-color: var(--white);
+  --text-color: var(--black100);
+  --secondary-color: var(--grey1);
+  --card-bg: #f3f3f3;
+  --accent-color: var(--blue);
 
-//gray scale 
+  --grey1: #070707;
+  --secondary-color: #292929
 
-$white: #ffffff;
-$black100: #18181B;
-$black50: #252532;
-$grey2: #D1D1D1;
-$grey1: #B0B0B2;
-$grey80: #252532;
+  --service-bg: rgba(240, 240, 240, 0.9);
+}
 
-// mixins
 
-// ✅ Ультра-универсальный миксин
+
+
 @mixin gradient-border() {
   position: relative;
   border: 1px solid transparent;
@@ -34,10 +57,11 @@ $grey80: #252532;
     position: absolute;
     inset: 0;
     padding: 1px;
-    background: $linear;
+    background: var(--var-linear);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     z-index: -1;
     pointer-events: none;
   }
 }
+

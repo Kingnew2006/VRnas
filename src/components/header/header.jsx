@@ -1,10 +1,10 @@
 import "./header.scss";
 import ReactDOM from "react-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 // import logo from "../../assets/logos/logo.svg";
 import LanguageSwitcher from "../../i18n/languageSwitcher";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import styled from "styled-components";
 import ThemeToggleButton from "../../../style/theme";
@@ -12,7 +12,19 @@ import Button from "../MiniComponents/Button";
 
 function Header() {
   const { t } = useTranslation();
-  let path = useLocation().pathname;
+  const [hovered, setHovered] = useState(false);
+  const hoverTimeout = useRef(null);
+
+  const handleMouseEnter = () => {
+    clearTimeout(hoverTimeout.current);
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    hoverTimeout.current = setTimeout(() => {
+      setHovered(false);
+    }, 1000); // небольшая задержка на уход мышки
+  };
 
   return (
     <div className="header__container">
@@ -25,7 +37,10 @@ function Header() {
         </div>
 
         <div className="header__links">
-          <Links />
+          <Links
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          />
         </div>
         <div className="header__state__container">
           <div className="back"></div>
@@ -37,45 +52,59 @@ function Header() {
           </div>
         </div>
 
-        <Link to="/contactus">
-          <Button Width={126} Value={t("headerbuttons.contactus")} className="header__contactus">
-          </Button>
-        </Link>
+        <NavLink to="/contactus">
+          <button className="header__contactus">
+            {t("headerbuttons.contactus")}
+          </button>
+        </NavLink>
       </div>
-      <div className="header__pagebutton">
-        {path === "/page" ? <PageButton /> : null}
-      </div>
+      <div className="header__pagebutton">{hovered && <PageButton />}</div>
     </div>
   );
 }
 
-function Links() {
-  const [active, setActive] = useState("home");
+function Links({ onMouseEnter, onMouseLeave }) {
   const { t } = useTranslation();
 
   const linkItems = [
     { name: "home", to: "/", label: t("headerbuttons.home") },
     { name: "aboutus", to: "/aboutus", label: t("headerbuttons.aboutus") },
     { name: "service", to: "/services", label: t("headerbuttons.service") },
-    { name: "page", label: t("headerbuttons.page.title"), to: "/page" },
+    {
+      name: "page",
+      label: t("headerbuttons.page.title"),
+      to: "/page",
+      nolink: true,
+    },
     { name: "blog", to: "/blog", label: t("headerbuttons.blog") },
   ];
 
   return (
     <ul>
-      {linkItems.map((item) => (
-        <li key={item.name}>
-          <Link
-            to={item.to}
-            className={clsx("", {
-              "link--active": active === item.name,
-            })}
-            onClick={() => setActive(item.name)}
-          >
-            {item.label}
-          </Link>
-        </li>
-      ))}
+      {linkItems.map((item) => {
+        if (item?.nolink)
+          return (
+            <li key={item.name}>
+              <div
+                className="link"
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+              >
+                {t(item.label)}
+              </div>
+            </li>
+          );
+        return (
+          <li key={item.name}>
+            <NavLink
+              to={item.to}
+              className={({ isActive }) => (isActive ? "link--active" : " ")}
+            >
+              {item.label}
+            </NavLink>
+          </li>
+        );
+      })}
     </ul>
   );
 }
@@ -89,9 +118,6 @@ const PagePortal = styled.div`
 `;
 
 function PageButton() {
-  // const { t } = useTranslation();
-  const [active, setActive] = useState(true);
-
   const pageLinks = [
     { to: "/page/Pricingplan", label: "Pricing Plan" },
     { to: "/page/Terms", label: "Terms & Conditions" },
@@ -99,17 +125,22 @@ function PageButton() {
   ];
 
   return ReactDOM.createPortal(
-    <PagePortal active={active}>
+    <PagePortal active={true}>
       <div className="pagebutton__main">
         {pageLinks.map((link, index) => (
-          <Link key={index} to={link.to} onClick={() => setActive(false)}>
-            <div className="pagebutton__main--option">{link.label}</div>
-          </Link>
+          <NavLink
+            key={index}
+            to={link.to}
+            className={({ isActive }) =>
+              isActive ? "link--active pagebutton__main--option" : "pagebutton__main--option"
+            }
+          >
+             <div>{link.label} </div>
+          </NavLink>
         ))}
       </div>
     </PagePortal>,
     document.getElementById("modal-root")
   );
 }
-
 export default Header;

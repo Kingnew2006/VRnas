@@ -31,9 +31,9 @@ function Header() {
       <div className="header">
         <div className="header__logo">
           <div className="backGradient"></div>
-          <Link to="/">
+          <NavLink to="/">
             <img src="/logos/logo.svg" alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
 
         <div className="header__links">
@@ -53,9 +53,7 @@ function Header() {
         </div>
 
         <NavLink to="/contactus">
-          <button className="header__contactus">
-            {t("headerbuttons.contactus")}
-          </button>
+          <Button Width={126} Value={t("headerbuttons.contactus")} className="header__contactus"/>
         </NavLink>
       </div>
       <div className="header__pagebutton">{hovered && <PageButton />}</div>

@@ -55,10 +55,7 @@
     &__header {
       font-size: 16px;
       font-weight: 500;
-      background: var(--gradient); /* вместо var(--var-accent) */
-      background-clip: text;
-      -webkit-background-clip: text; /* для кроссбраузерности */
-      color: transparent;
+      @include gradient-text();
     }
 
     &__text {

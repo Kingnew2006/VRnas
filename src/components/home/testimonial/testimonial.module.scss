@@ -1,0 +1,79 @@
+@use "../../../../style/datastyles" as *;
+
+.main {
+    width: 1247px;
+    height: 1247px;
+    margin: 100px 97px;
+    position: relative;
+
+    &__title {
+        font-size: 16px;
+        line-height: 100%;
+        font-weight: 500;
+        @include gradient-text();
+        padding: 111px 0 0 562px;
+    }
+
+    &__description {
+        font-size: 48px;
+        font-weight: 600;
+        color: var(--text-color);
+        margin: 12px 0 0 309px;
+    }
+}
+
+.bg {
+    position: absolute;
+    width: 1247px;
+    height: 1247px;
+    z-index: -1;
+}
+
+.personal1 {
+    position: absolute;
+    top: 321px;
+}
+.personal2 {
+    position: absolute;
+    top: 259px;
+    left: 762px;
+}
+.personal3 {
+    position: absolute;
+    top: 602px;
+    left: 1034px;
+}
+.personal4 {
+    position: absolute;
+    top: 867px;
+    left: 574px;
+}
+.personal5 {
+    position: absolute;
+    top: 916px;
+    left: 165px;
+}
+.personal6 {
+    position: absolute;
+    top: 1091px;
+    left: 939px;
+}
+
+.img {
+    width: 618px;
+    height: 477px;
+    margin: 138px 0 0 340px;
+    background: url(/home_assests/testimonial/manVr.png) rgba(211, 211, 211, 0) 50% / cover no-repeat ;
+    
+    
+    
+        &_vr_gradient {
+            position: absolute;
+            width: 618px;
+            height: 477px;
+            background: var(--gradient);
+            filter: blur(100px);
+            z-index: -3;
+        }
+    
+    }

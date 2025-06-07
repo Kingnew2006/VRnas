@@ -36,8 +36,8 @@ const Arrow = styled.svg`
   transition: transform 0.3s ease;
   color: var(--text-color); /* вместо rgb(255, 255, 255) */
   fill: white;
-  ${({ active }) =>
-    active &&
+  ${({ $active }) =>
+    $active &&
     css`
       transform: rotate(180deg);
     `}
@@ -59,7 +59,7 @@ export default function Question({ question, description }) {
         aria-expanded={active}
       >
         <div>{question}</div>
-        <div><Arrow active={active} viewBox="0 0 13 12"><path d="M6.01685 7.68789L3.01685 4.68789L3.55435 4.15039L6.01685 6.62539L8.47935 4.16289L9.01685 4.70039L6.01685 7.68789Z" /></Arrow></div>
+        <div><Arrow $active={active} viewBox="0 0 13 12"><path d="M6.01685 7.68789L3.01685 4.68789L3.55435 4.15039L6.01685 6.62539L8.47935 4.16289L9.01685 4.70039L6.01685 7.68789Z" /></Arrow></div>
       </QuestionContainer>
 
       {active && <Description>{description}</Description>}

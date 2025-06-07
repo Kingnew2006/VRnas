@@ -1,0 +1,67 @@
+@use "../../../../style/datastyles" as *;
+
+.container {
+    
+    display: flex;
+    position: absolute;
+}
+
+.desCon {
+        width: 300px;
+        height: 123px;
+        border: 1px solid rgb(37, 37, 50);
+        background-color: #252532C4;
+        margin-left: 16px;
+        color: var(--grey2);
+
+        &__des {
+            width: 255px;
+            height: 60px;
+            margin: 18px 0 0 16px;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &__job {
+            display: flex;
+            place-items: center;
+            width: 255px;
+            height: 24px;
+            margin: 8px 0 0 20px;
+            border-bottom: 1px solid transparent;
+            font-size: 12px;
+            font-weight: 400;
+            
+        }
+        &__line {
+             @include gradient-border();
+            width: 200px;
+            height: 1px;
+            margin: 0 0 0 15px;
+        }
+    }
+
+.circle {
+    background-color: #25253299;
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.back {
+    background: var(--gradient);
+    filter: blur(10px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}

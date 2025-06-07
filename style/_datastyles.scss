@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'chakra';
-  src: url('./fonts/ChakraPetch-Regular.ttf') format('truetype');
+  src: url('./fonts/ChakraPetch-Regular.ttf') format('ttf'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -31,7 +31,6 @@
 
 
 [data-theme='light'] {
-  /* Переопределяем только смысловые переменные */
   --bg-color: var(--white);
   --text-color: var(--black100);
   --secondary-color: var(--grey1);
@@ -47,21 +46,37 @@
 
 
 
-@mixin gradient-border() {
+@mixin gradient-border($radius: 0px) {
   position: relative;
   border: 1px solid transparent;
   z-index: 0;
+  border-radius: $radius;
 
-  &::before {
+   &::before {
     content: "";
     position: absolute;
     inset: 0;
     padding: 1px;
-    background: var(--var-linear);
+    background: var(--gradient);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
     mask-composite: exclude;
     z-index: -1;
     pointer-events: none;
   }
 }
 
+@mixin gradient-text() {
+  color: transparent;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}

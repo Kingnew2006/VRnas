@@ -22,7 +22,6 @@
 
 .container {
   padding: 150px 120px;
-  font-family: "chakra"; // Проверь точное имя шрифта
 }
 
 .header {
@@ -42,11 +41,7 @@
 
 .subtitle {
   width: 128px;
-  color: transparent;
-  background: var(--gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @include gradient-text();
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 2.24px;

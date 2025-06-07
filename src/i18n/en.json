@@ -71,34 +71,34 @@
   "ourService": {
     "title": "Our Service",
     "description": "We use the latest VR hardware and software to create high-quality VR experiences that are accessible and affordable. Our goal is to provide exceptional customer service and support, and our team is always available to answer any questions and address any concerns you may have."
+  },
+  "services": {
+    "vrDevelopment": {
+      "title": "VR Development",
+      "description": "From concept to creation, our team of VR developers will bring your vision to life."
     },
-    "services": {
-      "vrDevelopment": {
-        "title": "VR Development",
-        "description": "From concept to creation, our team of VR developers will bring your vision to life."
-      },
-      "vrDesign": {
-        "title": "VR Design",
-        "description": "Our talented VR designers will create immersive and engaging environments that will captivate your audience."
-      },
-      "vrConsulting": {
-        "title": "VR Consulting",
-        "description": "Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations."
-      },
-      "vrGames": {
-        "title": "VR Games",
-        "description": "We offer a wide selection of VR games that are suitable for players of all ages and skill levels."
-      },
-      "vrEvents": {
-        "title": "VR Events",
-        "description": "Make your next event unforgettable with our VR event services.",
-        "learnMore": "Learn More"
-      },
-      "vrEntertainment": {
-        "title": "VR Entertainment",
-        "description": "Create a VR escape room, or offer VR experiences at a theme park — we have the expertise and experience to make it happen."
-      }
+    "vrDesign": {
+      "title": "VR Design",
+      "description": "Our talented VR designers will create immersive and engaging environments that will captivate your audience."
     },
+    "vrConsulting": {
+      "title": "VR Consulting",
+      "description": "Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations."
+    },
+    "vrGames": {
+      "title": "VR Games",
+      "description": "We offer a wide selection of VR games that are suitable for players of all ages and skill levels."
+    },
+    "vrEvents": {
+      "title": "VR Events",
+      "description": "Make your next event unforgettable with our VR event services.",
+      "learnMore": "Learn More"
+    },
+    "vrEntertainment": {
+      "title": "VR Entertainment",
+      "description": "Create a VR escape room, or offer VR experiences at a theme park — we have the expertise and experience to make it happen."
+    }
+  },
   "whyChooseUs": {
     "text": "Why Choose Us",
     "title": "Why Choose Us for Your VR Needs",
@@ -116,8 +116,41 @@
         "desc": "Our support team is always available to guide you through every step of the process, from planning to implementation, ensuring a seamless and satisfying experience."
       }
     }
+  },
+  "HowToGet": {
+    "title": "How to Get Started",
+    "subtitle": "Bringing Your Virtual Reality Dreams to Life",
+    "service": "VR Service",
+    "GetStarted": "Get Started"
+  },
+  "testimonial": {
+    "title": "TESTIMONIAL",
+    "des": "What Our Clients Are Saying",
+    "Personals": {
+      "Personal1": {
+        "Description": "The team delivered beyond our expectations. Their VR solutions brought our architectural concepts to life in ways we couldn’t imagine.",
+        "Title": "Emily Tran – Founder, ArchiVision"
+      },
+      "Personal2": {
+        "Description": "Efficient, creative, and always ahead of the curve. VRNas helped us gamify our educational content for kids in record time.",
+        "Title": "Carlos Mendes – EdTech Director, FunLearn"
+      },
+      "Personal3": {
+        "Description": "Our medical simulations reached a whole new level thanks to VRNas. Highly recommended for any serious VR implementation.",
+        "Title": "Dr. Anika Sharma – Head of Innovation, MediTrain"
+      },
+      "Personal4": {
+        "Description": "We were blown away by the realism and responsiveness of their virtual training environments. Amazing job by a professional team.",
+        "Title": "James O'Connell – COO, SkillForge VR"
+      },
+      "Personal5": {
+        "Description": "From concept to deployment, the team at VRNas made our art exhibition interactive and unforgettable. Creative geniuses!",
+        "Title": "Lara Nguyen – Creative Director, DigitalCanvas"
+      },
+      "Personal6": {
+        "Description": "They transformed our tourism platform with immersive VR tours. Visitors now spend twice as long exploring our destinations!",
+        "Title": "Tariq Al-Farsi – CEO, Explore360"
+      }
+    }
   }
 }
-
-  
-

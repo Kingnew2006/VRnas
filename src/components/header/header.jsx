@@ -53,7 +53,7 @@ function Header() {
         </div>
 
         <NavLink to="/contactus">
-          <Button Width={126} Value={t("headerbuttons.contactus")} className="header__contactus"/>
+          <Button Value={t("headerbuttons.contactus")} className="header__contactus"  ></Button>
         </NavLink>
       </div>
       <div className="header__pagebutton">{hovered && <PageButton />}</div>
@@ -111,7 +111,7 @@ const PagePortal = styled.div`
   position: absolute;
   margin-top: 70px;
   margin-left: 820px;
-  visibility: ${(props) => (props.active ? "visible" : "hidden")};
+  visibility: ${(props) => (props.$active ? "visible" : "hidden")};
   z-index: 100;
 `;
 
@@ -123,7 +123,7 @@ function PageButton() {
   ];
 
   return ReactDOM.createPortal(
-    <PagePortal active={true}>
+    <PagePortal  $active="true">
       <div className="pagebutton__main">
         {pageLinks.map((link, index) => (
           <NavLink

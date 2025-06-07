@@ -74,9 +74,10 @@
   }
 
   &__contactus {
-    width: 126px;
-    color: var(--text-color);
     margin-left: 15px;
+    z-index: 1;
+     
+
 
     &:hover {
       visibility: visible;

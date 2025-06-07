@@ -8,6 +8,8 @@ import styled from "styled-components";
 import AboutUs from "../home/aboutus/aboutus";
 import Services from "../home/Ourservices/services";
 import { WhyChooseUs, WhyUsImg } from "./WhyUs/WhyUs";
+import HowGetStarted from "./howGetStarted/HowGetStarted";
+import Testimonial from "./testimonial/testimonial";
 
 const BackgroundLines = styled.div`
   background-image: url(/background/Lines.png);
@@ -29,6 +31,8 @@ function Home() {
       <WhyChooseUs>
         <WhyUsImg />
       </WhyChooseUs>
+      <HowGetStarted />
+      <Testimonial/>
     </>
   );
 }
